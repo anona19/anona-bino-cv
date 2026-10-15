@@ -1,0 +1,189 @@
+\documentclass[10pt,a4paper]{extarticle}
+
+% ---------- Page layout and typography ----------
+\usepackage[a4paper,top=1.2cm,bottom=1.2cm,left=1.6cm,right=1.6cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage[hidelinks,bookmarks=false]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.05}
+
+% ---------- Colours ----------
+\definecolor{accent}{HTML}{000000}
+\definecolor{muted}{HTML}{4B5563}
+
+% ---------- Section and list formatting ----------
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0pt}{}[\vspace{-2pt}\color{accent}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\setlist[itemize]{leftmargin=1.25em,topsep=1pt,itemsep=1pt,parsep=0pt,partopsep=0pt}
+\setlist[enumerate]{leftmargin=1.45em,topsep=1pt,itemsep=1pt,parsep=0pt}
+
+% ---------- Reusable CV commands ----------
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{4.2cm}@{}}
+    \textbf{#1} & \textcolor{muted}{#2}\\[-1pt]
+    \textit{#3} & {\textcolor{muted}{#4}}
+  \end{tabularx}\vspace{-2pt}
+}
+\newcommand{\project}[3]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{1.1cm}@{}}
+    \textbf{#1} & \textcolor{muted}{#2}
+  \end{tabularx}
+  {\textit{\textcolor{muted}{#3}}}\vspace{-2pt}
+}
+\newcommand{\smallgap}{\vspace{2pt}}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\fontsize{30}{36}\selectfont\bfseries Anona Bino}\\[7pt]
+  { Kochi, Kerala, India 682022 \quad$\cdot$\quad
+  anonabino@gmail.com
+  \quad$\cdot$\quad +91 8590710120}\\[3pt]
+  {\href{https://www.linkedin.com/in/anona-bino}{linkedin.com/in/anona-bino}
+  \quad$\cdot$\quad
+  \href{https://github.com/anona19}{github.com/anona19}}
+\end{center}
+\vspace{-5pt}
+
+\section{Professional Summary}
+B.Tech Computer Science and Engineering student at CUSAT with strong skills in data structures and algorithms, C++, and Java. Passionate about building efficient software, solving complex problems, and working on autonomous systems.
+
+
+\section{Education}
+\entry{Cochin University of Science and Technology}{Kochi, India}{B.Tech, Computer Science and Engineering}{2025 --- 2029}
+\hspace{1em}\textbf{CGPA:} 9.77
+\smallgap
+\smallgap
+
+\entry{Holy Family Higher Secondary School}{Kozhikode, India}{Higher Secondary Education }{2022 --- 2024}
+\hspace{1em}\textbf{Score:} 99.5\% 
+
+\section{Relevant Coursework}
+\text Data Structures and Algorithms , Object-Oriented Programming (C++) , Computer Programming , Computer Architecture and Organization , Discrete Computational Structures; Principles of Programming Languages; Automata Languages and Computations , Introduction to Cyber Physical Systems , Introduction to Robotics , Linear Algebra and Transform Techniques , Calculus.
+
+
+\section{Skills}
+\textbf{Languages:}  C++, C, Java\\
+\textbf{OS:} Linux, Windows\\
+\textbf{Tools \& Platforms:} ROS, Gazebo, Git, GitHub, MATLAB, VS Code, LaTeX, MS Word\\
+\textbf{Soft Skills:} Leadership, Team Building, Adaptability, Public Speaking, Analytical Thinking, Fast Learner, Technical Report Writing\\
+\textbf{Linguistic Proficiency:} English (Professional), Malayalam (Native), Hindi (Elementary), Tamil (Elementary)
+
+
+
+
+
+\section{Professional Experience}
+\entry{MathWorks}{Kochi, India}{Summer Intern}{Jun 2026}
+\begin{itemize}
+  \item Completed hands-on training in MATLAB and Simulink, covering computational problem-solving, data analysis, signal processing, and simulation-based system modelling, and applied it through three projects:
+  \item \textbf{Stellar Motion:} Analysed the Hydrogen-alpha wavelength to find the star's redshift factor and determined whether it was moving away from or towards Earth.
+  \item \textbf{Natick Elevation:} Built a 3D surface plot of the terrain around the MathWorks Headquarters in Natick from latitude, longitude, and elevation data using MATLAB functions such as \texttt{griddata} and \texttt{surf}.
+  \item \textbf{Thermostat Model:} Designed and simulated a virtual thermostat control system in Simulink that maintains a constant temperature of 22\textdegree{}C.
+\end{itemize}
+
+
+
+\section{Projects}
+\project{MarkIt --- Smart Academic Performance Dashboard  }{2025}{Software Project, CUSAT}
+\begin{itemize}
+  \item Built an intelligent dashboard to track academic performance, automate CGPA and average calculations, and generate predictive insights on the scores needed to achieve target grades. 
+\end{itemize}
+\vspace{5pt}
+\project{BHADRA --- Universal Accident Detection and Emergency Response System  }{2025}{CUSAT}
+\begin{itemize}
+  \item Designed a multi-sensor vehicle accident detection system integrating accelerometers, gyroscopes, vehicle diagnostics, GPS, and GSM communication to automate emergency alerts with precise location data.
+  \item Designed a system concept for cross-vehicle compatibility, including two-wheelers, cars, and commercial vehicles.
+\end{itemize}
+\vspace{5pt}
+
+\project{Rakshak --- Autonomous Flood Rescue and Victim Detection System   }{2025}{CUSAT}
+\begin{itemize}
+  \item Designed an autonomous disaster-response system combining thermal, sound, and motion sensors with GPS and LoRa mesh networking to locate stranded victims during network outages.
+  \item Outlined a concept incorporating solar and kinetic energy harvesting, location stabilization, and real-time alerts to support rescue operations.
+
+\end{itemize}
+
+
+
+
+
+
+\newpage
+
+\section{Leadership Experience}
+\entry{AROHA Drone Club}{Kochi, India}{Software Team Lead (previously Software and Documentation Member)}{Oct 2025 --- Present}
+\begin{itemize}
+  \item Contributed to the software team of an autonomous drone project, carrying out simulations in Gazebo and supporting technical documentation. Part of the team that achieved World Rank 15 and Kerala Rank 1 at ISDC 2026, and AIR 9 and Kerala Rank 1 at SAE Aerothon 2025.
+
+\end{itemize}
+
+\vspace{4pt}
+\entry{Bharat Scouts and Guides}{2022 -- 2024}{Active Member (Dwitiya Sopan, Nanmamudra)}{Kozhikode, India}
+\begin{itemize}
+  \item Conducted social awareness campaigns on road safety and an anti-drug awareness class for students, promoting responsible and healthy behaviour in the community.
+  \item Participated in cleanliness drives in my hometown and school, and volunteered at school events and celebrations.
+  \item Distributed food and essential supplies to people in need, building empathy, teamwork and a lasting commitment to service.
+\end{itemize}
+
+
+\section{Invited Talks}
+\begin{itemize}
+  \item ``AEROVERSE,'' hosted by IEEE AESS CUSAT SB and IEEE IAS CUSAT SBC, 2026.
+\end{itemize}
+
+\section{Certifications \hfill \href{https://drive.google.com/drive/folders/1t3oSfmYjLLcIkIFORVrVTIePM-OADnfZ?usp=sharing}{\includegraphics[height=1em]{google-drive-new-icon-2026-png.jpg}}}
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+  \textbf{Programming in MATLAB Certification} & \textbf{MATLAB Onramp Certification}\\
+  MATLAB --- 2026 & MATLAB --- 2026\\[2pt]
+  \textbf{Simulink Onramp Certification} & \textbf{Machine Learning Onramp Certification}\\
+  SIMULINK --- 2026 & MATLAB --- 2026\\[2pt]
+  \textbf{Computer Vision 101} & \textbf{Deep Learning for Developers}\\
+  Infosys Springboard --- 2026 & Infosys Springboard --- 2026\\[2pt]
+  \textbf{Artificial Intelligence Primer Certification} & \textbf{Principles of Generative AI Certification}\\
+  Infosys Springboard --- 2026 & Infosys Springboard --- 2026\\[2pt]
+  \textbf{Agile Scrum in Practice} & \textbf{Introduction to Data Science}\\
+  Infosys Springboard --- 2026 & Infosys Springboard --- 2026
+\end{tabularx}
+
+
+
+\section{Awards and Achievements}
+\begin{itemize}
+  \item 1st Place --- IEEE CAS SBC Ideathon, CUSAT.
+  \item 1st Place --- Ignite Ideas, ACES Knowledge Festival 2026 (VIBHAVA).
+  \item 2nd Place --- SOCE–EOC Ideathon, CUSAT.
+  \item ISDC 2026 --- World Rank 15, Kerala Rank 1 in the International Space Drone Challenge.
+  \item AeroTHON 2025 --- AIR 9, Kerala Rank 1 in SAE India's national UAV competition.
+  \item Dwitiya Sopan --- Bharat Scouts and Guides.
+  \item Nanmamudra Certificate --- Bharat Scouts and Guides.
+  
+\end{itemize}
+
+\section{References}
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+  \textbf{Mr. V. Damodaran} & \textbf{Ms. Aswathy C. S.}\\
+  Head of the Division & Assistant Professor\\
+  Division of Computer Science and Engineering & Division of Computer Science and Engineering\\
+  Cochin University of Science and Technology & Cochin University of Science and Technology\\
+  Kochi -- 682022, Kerala, India & Kochi -- 682022, Kerala, India\\
+  Email: \href{mailto:dams72@gmail.com}{dams72@gmail.com} & Email: \href{mailto:aswathycs@cusat.ac.in}{aswathycs@cusat.ac.in}\\
+  Phone: +91 94470 01195 & Phone: +91 96334 69658
+\end{tabularx}
+
+\end{document}
